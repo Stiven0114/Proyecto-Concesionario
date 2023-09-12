@@ -1,0 +1,25 @@
+<div>
+    <form [formGroup]="clienteForm" (ngSubmit)="addCliente()">
+        <input type="hidden" name="id" id="txtid" formControlName="id">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" name="txtname" formControlName="nombres" id="txtname">
+        </div>
+        <div class="form-group">
+            <label for="name">Apellido</label>
+            <input type="text" class="form-control" name="txtlastName" formControlName="apellidos" id="txtlastName">
+        </div>
+        <div class="form-group">
+            <label for="name">Correo</label>
+            <input type="text" class="form-control" name="txtcorreo" formControlName="correo" id="txtcorreo">
+        </div>
+        <div class="form-group">
+            <label for="name">Telefono</label>
+            <input type="text" class="form-control" name="txttelefono" formControlName="telefono" id="txttelefono">
+        </div>
+        <div>
+            <input type="submit" value="Guardar"/>
+        </div>
+    </form>
+    <script src="sweetalert2.all.min.js"></script>
+</div>
